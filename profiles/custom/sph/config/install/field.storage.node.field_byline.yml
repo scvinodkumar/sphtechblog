@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: xUE_rXdKol69o4msPhC3993HmLcyW1IQVmC7A0x1zYk
 id: node.field_byline
 field_name: field_byline
 entity_type: node

@@ -1,9 +1,12 @@
+uuid: 08d9b57f-a6a0-457b-bada-0b779add6451
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_e_mail_address
     - node.type.author
+_core:
+  default_config_hash: P_sZlsGUYEK0vCib_9z2oSmMmaP4BO2axBUxr05yttw
 id: node.author.field_e_mail_address
 field_name: field_e_mail_address
 entity_type: node

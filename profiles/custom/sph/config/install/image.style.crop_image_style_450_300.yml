@@ -1,0 +1,17 @@
+uuid: 54eb6a2d-ec41-4b85-9244-5ecae2188fe4
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_450_300
+  module:
+    - crop
+name: crop_image_style_450_300
+label: 'Crop Image Style 450:300'
+effects:
+  2f0f2b76-3a70-45d7-b133-33fc739b83d5:
+    uuid: 2f0f2b76-3a70-45d7-b133-33fc739b83d5
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_450_300

@@ -1,0 +1,17 @@
+uuid: 04612ecf-e5c0-4d07-991e-bcbfe4868f2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.profile_photo
+  module:
+    - crop
+name: crop_image_style_60_70
+label: 'Crop Image Style 60:70'
+effects:
+  8d6f301f-9c0b-4041-ba47-9ee99883fa99:
+    uuid: 8d6f301f-9c0b-4041-ba47-9ee99883fa99
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: profile_photo

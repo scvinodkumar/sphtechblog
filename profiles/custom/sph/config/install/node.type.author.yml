@@ -1,3 +1,4 @@
+uuid: 112c5627-68e8-47a2-abda-c9ec2d3f7d4a
 langcode: en
 status: true
 dependencies:
@@ -8,6 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
+_core:
+  default_config_hash: 90n1OR-Htff-VBtoQd-Ldqwl8ub0sU6jxOwOopzI5s8
 name: Author
 type: author
 description: 'This is simple author content type'

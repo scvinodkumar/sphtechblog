@@ -1,3 +1,4 @@
+uuid: d6e30656-7d07-4334-8454-73bebeea3f8f
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - field.storage.node.field_keywords
     - node.type.blog
     - taxonomy.vocabulary.keywords
+_core:
+  default_config_hash: BhRnjJ3CP0VIW-lbKCwcWAcHDzBlGwdCNf58aehxOUU
 id: node.blog.field_keywords
 field_name: field_keywords
 entity_type: node

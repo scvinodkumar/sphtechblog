@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: 5taGzdzsA8qz6N--OGGsOE2pKqoTs7VvxnZ9w2Qsg9E
 id: node.field_e_mail_address
 field_name: field_e_mail_address
 entity_type: node

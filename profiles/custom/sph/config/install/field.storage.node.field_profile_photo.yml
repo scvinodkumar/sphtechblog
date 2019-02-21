@@ -6,6 +6,8 @@ dependencies:
     - file
     - image
     - node
+_core:
+  default_config_hash: s-TXwpuERMqUo0sHgAOCqofbr6ZPTvfDv22r-juo7wE
 id: node.field_profile_photo
 field_name: field_profile_photo
 entity_type: node

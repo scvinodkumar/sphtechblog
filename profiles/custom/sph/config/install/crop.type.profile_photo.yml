@@ -1,0 +1,12 @@
+uuid: a4790b84-990c-471c-921a-44b3a96393b8
+langcode: en
+status: true
+dependencies: {  }
+label: 'Crop 60:70'
+id: profile_photo
+description: 'perform a portrait crop selection for display of 60x70 pixels'
+aspect_ratio: '16:9'
+soft_limit_width: 60
+soft_limit_height: 70
+hard_limit_width: 60
+hard_limit_height: 70

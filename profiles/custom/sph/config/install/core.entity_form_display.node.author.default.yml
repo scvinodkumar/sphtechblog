@@ -11,9 +11,11 @@ dependencies:
     - image.style.thumbnail
     - node.type.author
   module:
-    - image
+    - image_widget_crop
     - path
     - text
+_core:
+  default_config_hash: _IMntivQrwWPzftgELqstF5EEKnAviyECTSrWkN9KsA
 id: node.author.default
 targetEntityType: node
 bundle: author
@@ -61,11 +63,26 @@ content:
   field_profile_photo:
     weight: 125
     settings:
-      progress_indicator: throbber
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - profile_photo
+      crop_types_required:
+        - profile_photo
+      progress_indicator: throbber
+      show_crop_area: false
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30

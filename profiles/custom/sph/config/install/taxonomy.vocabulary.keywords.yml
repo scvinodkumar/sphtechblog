@@ -2,6 +2,8 @@ uuid: 8cd5e7cf-f6de-4908-966f-c32892c78b00
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: tBtlgpjAwmPCpVVNKpEpuLtrBmDMDUXEO6GR212964w
 name: Keywords
 vid: keywords
 description: ''

@@ -1,9 +1,12 @@
+uuid: 533a9227-ae2a-4f6d-9739-35883a378897
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_full_name
     - node.type.author
+_core:
+  default_config_hash: BPbZ9eD-16Dk8xRKBoCMI697nV-mW0xrAKz-pmSmwPI
 id: node.author.field_full_name
 field_name: field_full_name
 entity_type: node

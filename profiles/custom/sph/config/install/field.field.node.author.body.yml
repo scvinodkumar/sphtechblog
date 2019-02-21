@@ -1,3 +1,4 @@
+uuid: 3676f9c6-56e4-4ec7-ba40-e7fed731a0b3
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.author
   module:
     - text
+_core:
+  default_config_hash: sPL6ftpoqva8V05lIilfiPS0LHrd87iG1G23VjLwAAk
 id: node.author.body
 field_name: body
 entity_type: node

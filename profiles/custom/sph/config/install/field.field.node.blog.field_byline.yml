@@ -1,3 +1,4 @@
+uuid: 2ad7b53a-136b-476a-a68a-cf5c32c93f2d
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - field.storage.node.field_byline
     - node.type.author
     - node.type.blog
+_core:
+  default_config_hash: 0WXPCziLEfEMcIjou0mA1CW94Bnzz3MG9a-TOjFHyVk
 id: node.blog.field_byline
 field_name: field_byline
 entity_type: node

@@ -1,0 +1,12 @@
+uuid: c71798f4-d624-4005-b6cb-a4c20974ea2e
+langcode: en
+status: true
+dependencies: {  }
+label: 'Crop 450:300'
+id: crop_450_300
+description: 450x300
+aspect_ratio: '16:9'
+soft_limit_width: 450
+soft_limit_height: 300
+hard_limit_width: 450
+hard_limit_height: 300

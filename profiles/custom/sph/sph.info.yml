@@ -4,6 +4,7 @@ description: 'SPH Install with commonly used features pre-configured.'
 version: VERSION
 core: 8.x
 install:
+  - admin_toolbar
   - node
   - history
   - block
@@ -41,6 +42,7 @@ install:
   - automated_cron
   - content_translation
   - crop
+  - image_widget_crop
 themes:
   - bartik
   - seven

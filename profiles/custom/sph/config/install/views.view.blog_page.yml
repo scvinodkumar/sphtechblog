@@ -9,12 +9,15 @@ dependencies:
     - field.storage.node.field_keywords
     - field.storage.node.field_photo
     - field.storage.node.field_profile_photo
+    - image.style.thumbnail
     - node.type.blog
   module:
     - image
     - node
     - text
     - user
+_core:
+  default_config_hash: 69DuY5sotKxNn1s9kbAdhwN7N2E0X6xOXYE-N-Y33j0
 id: blog_page
 label: 'Blog Page'
 module: views
@@ -134,7 +137,7 @@ display:
           id: field_e_mail_address
           table: node__field_e_mail_address
           field: field_e_mail_address
-          relationship: none
+          relationship: field_byline
           group_type: group
           admin_label: ''
           label: ''
@@ -196,7 +199,7 @@ display:
           id: field_profile_photo
           table: node__field_profile_photo
           field: field_profile_photo
-          relationship: none
+          relationship: field_byline
           group_type: group
           admin_label: ''
           label: ''
@@ -243,7 +246,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: thumbnail
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -260,14 +263,14 @@ display:
           id: field_full_name
           table: node__field_full_name
           field: field_full_name
-          relationship: none
+          relationship: field_byline
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"author-information\">\n<div class=\"fullname\"><a href=\"mailto:{{ field_e_mail_address }}\">{{ field_full_name }}</a></div>\n<div class=\"authorphoto\">{{ field_profile_photo }}</div>\n</div>"
+            text: "<div class=\"author-information\">\r\n<div class=\"fullname\"><a href=\"mailto:{{ field_e_mail_address }}\">{{ field_full_name }}</a></div>\r\n<div class=\"authorphoto\">{{ field_profile_photo }}</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -524,8 +527,39 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
           value:
             blog: blog
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -550,16 +584,14 @@ display:
       footer: {  }
       empty: {  }
       relationships:
-        uid:
-          id: uid
-          table: node_field_data
-          field: uid
+        field_byline:
+          id: field_byline
+          table: node__field_byline
+          field: field_byline
           relationship: none
           group_type: group
-          admin_label: author
+          admin_label: 'field_byline: Content'
           required: true
-          entity_type: node
-          entity_field: uid
           plugin_id: standard
       arguments: {  }
       display_extenders: {  }

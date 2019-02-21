@@ -1,0 +1,10 @@
+uuid: ed909da9-3a9b-4ed2-a981-007146a1c404
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.keywords
+id: taxonomy_term.keywords
+target_entity_type_id: taxonomy_term
+target_bundle: keywords
+default_langcode: site_default
+language_alterable: false
